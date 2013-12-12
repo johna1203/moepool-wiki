@@ -50,14 +50,19 @@ cgminer.bat内に以下の処理を書いて下さい。
 
 ```bat
 setx GPU_MAX_ALLOC_PERCENT 100
+
 setx GPU_USE_SYNC_OBJECTS 1
+
 cgminer --scrypt -o stratum+tcp://www.moepool.com:3333 -u [ログインid.ワーカー名] -p [ワーカーパスワード]
+
 pause
 ```
 
 
 > `ログインid` : 萌えプールのログインid
+
 > `ワーカー名` : 萌えプールで作成したワーカーの名前
+
 > `ワーカーパスワード` : 萌えプールでワーカーを作った時に指定したパスワード
 
 
