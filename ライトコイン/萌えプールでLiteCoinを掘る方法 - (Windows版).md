@@ -15,24 +15,18 @@ moepool.com で LiteCoin を掘る方法
 
 ちなみに、`NVIDIAのGeForce系`を使っている人は [cudaminer](https://github.com/cbuchner1/CudaMiner)を使います。
 
-#### cgminerをダウンロードする
+#### cgminerのダウンロードの前に
 
-では、いよいよ`cgminer`をダウンロードします。
+現在 `cgminer` の最新版は3.8系なのですが、残念ながら`LiteCoin`を掘ることができませんので3.7系以下のを使わないといけません。
 
-[http://ck.kolivas.org/apps/cgminer/](http://ck.kolivas.org/apps/cgminer/)
+今回は、3.7系で説明をしようと思いましたが、[hikipuro](http://bitcoin.hateblo.jp/entry/2013/12/08/144922)の情報によりますと
 
-上記のURLから、`cgminer`の実行ファイルをダウンロードします。
+3.7系は、無害のマルウェアが含まれており、ウイルスチェッカーにもひっかかってしまいますので
 
+もう一個バージョンを下げて、今回は3.6系で説明を進めます。
 
-> **TIP**
->
-> [ひきぷろがビットコインを解説します](http://bitcoin.hateblo.jp/entry/2013/12/08/144922) hikipuroの情報によりますと
->
-> 個人的には3.7.2がおすすめですが、3.7.2は、どこかのマルウェアに含まれていたこともあるらしく、
->
-> 無害ですが、ウイルスチェッカーにひっかかってしまいます。。
+#### いよいよ、cgminerのダウンロード。
 
-無害みたいですが、今回ここでは、3.6系について紹介致します。
 
 
 
