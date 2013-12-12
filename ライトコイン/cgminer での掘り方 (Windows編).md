@@ -1,9 +1,3 @@
----
-"title": "萌えプールでcgminerを使ってライトコインを掘りましょう (Windows編)",
-"tags": ["litecoin", "windows"],
-"author": "Johnathan David Froeming"
----
-
 cgminer での掘り方 (Windows編)
 ==============================
 
@@ -48,15 +42,11 @@ batファイルを作りたいと思います。
 
 cgminer.bat内に以下の処理を書いて下さい。
 
-```bat
-setx GPU_MAX_ALLOC_PERCENT 100
 
-setx GPU_USE_SYNC_OBJECTS 1
-
-cgminer --scrypt -o stratum+tcp://www.moepool.com:3333 -u [ログインid.ワーカー名] -p [ワーカーパスワード]
-
-pause
-```
+    setx GPU_MAX_ALLOC_PERCENT 100
+    setx GPU_USE_SYNC_OBJECTS 1
+    cgminer --scrypt -o stratum+tcp://www.moepool.com:3333 -u [ログインid.ワーカー名] -p [ワーカーパスワード]
+    pause
 
 
 > `ログインid` : 萌えプールのログインid
@@ -64,6 +54,17 @@ pause
 > `ワーカー名` : 萌えプールで作成したワーカーの名前
 
 > `ワーカーパスワード` : 萌えプールでワーカーを作った時に指定したパスワード
+
+
+cgminer.batが保存できたら、ダブルクリックして起動してみましょう。
+
+プロンプトコマンドがでてきましたでしょうか？
+
+> cgminer miner version 3.6.6 - Started
+
+って現れていたら成功したと思われます。
+
+
 
 
 
